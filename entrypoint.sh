@@ -24,7 +24,7 @@ fi
 
 while true ; do
 	echo "Calling ${BUST_URL}"
-	curl ${HEADER_PARAMS[@]} "${BUST_URL}" $*
+	curl "${HEADER_PARAMS[@]}" "${BUST_URL}" $*
 	echo "Waiting ${TIME_BETWEEN_BUST} seconds"
 	sleep "${TIME_BETWEEN_BUST}"s
 done
